@@ -1,45 +1,4 @@
-@font-face {
-  font-family: "Campbook Latin";
-  src: url("fonts/campbook-latin-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Campbook Latin";
-  src: url("fonts/campbook-latin-bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Campbook Latin";
-  src: url("fonts/campbook-latin-italic.woff") format("woff");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Campbook CJK";
-  src: url("fonts/noto-serif-tc-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Campbook CJK";
-  src: url("fonts/noto-serif-tc-bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
-  --reading-font: "Campbook Latin", "Campbook CJK", "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
   --text: #2C2C2B;
   --muted: #7D7A75;
   --canvas: #FFFFFF;
@@ -97,7 +56,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-
 }
 
 .name {
-  font-family: var(--reading-font);
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 34px;
   line-height: 1.15;
   font-weight: 400;
@@ -157,14 +116,13 @@ section { padding: 0 0 40px; }
 section + section { border-top: 1px solid var(--border); padding-top: 32px; }
 
 h2 {
-  font-family: var(--reading-font);
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 22px;
   font-weight: 400;
   margin: 0 0 16px;
 }
 
 h3 {
-  font-family: var(--reading-font);
   font-size: 16px;
   font-weight: 600;
   margin: 24px 0 4px;
@@ -175,14 +133,7 @@ h3:first-of-type { margin-top: 0; }
 p { margin: 0 0 16px; }
 p:last-child { margin-bottom: 0; }
 
-main p,
-main li,
-main td {
-  font-family: var(--reading-font);
-  line-height: 1.68;
-}
-
-.lead { font-size: inherit; }
+.lead { font-size: 17px; }
 
 .meta { color: var(--muted); font-size: 14px; margin: 0 0 8px; }
 
