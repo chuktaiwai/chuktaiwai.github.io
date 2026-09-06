@@ -1,4 +1,45 @@
+@font-face {
+  font-family: "Campbook Latin";
+  src: url("fonts/campbook-latin-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Campbook Latin";
+  src: url("fonts/campbook-latin-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Campbook Latin";
+  src: url("fonts/campbook-latin-italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Campbook CJK";
+  src: url("fonts/noto-serif-tc-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Campbook CJK";
+  src: url("fonts/noto-serif-tc-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
+  --reading-font: "Campbook Latin", "Campbook CJK", "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
   --text: #2C2C2B;
   --muted: #7D7A75;
   --canvas: #FFFFFF;
@@ -23,11 +64,13 @@
 
 html { -webkit-text-size-adjust: 100%; }
 
+button, input, select, textarea { font: inherit; }
+
 body {
   margin: 0;
   background: var(--canvas);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--reading-font);
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -56,7 +99,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-
 }
 
 .name {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--reading-font);
   font-size: 34px;
   line-height: 1.15;
   font-weight: 400;
@@ -89,7 +132,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-
 nav.menu {
   margin-top: 24px;
   padding-bottom: 16px;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 8px 24px;
@@ -113,16 +156,17 @@ nav.menu a[aria-current="page"] { border-bottom-color: var(--accent); }
 main { padding: 40px 0 0; }
 
 section { padding: 0 0 40px; }
-section + section { border-top: 1px solid var(--border); padding-top: 32px; }
+section + section { border-top: 0; padding-top: 32px; }
 
 h2 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--reading-font);
   font-size: 22px;
   font-weight: 400;
   margin: 0 0 16px;
 }
 
 h3 {
+  font-family: var(--reading-font);
   font-size: 16px;
   font-weight: 600;
   margin: 24px 0 4px;
@@ -133,7 +177,14 @@ h3:first-of-type { margin-top: 0; }
 p { margin: 0 0 16px; }
 p:last-child { margin-bottom: 0; }
 
-.lead { font-size: 17px; }
+main p,
+main li,
+main td {
+  font-family: var(--reading-font);
+  line-height: 1.68;
+}
+
+.lead { font-size: inherit; }
 
 .meta { color: var(--muted); font-size: 14px; margin: 0 0 8px; }
 
@@ -178,6 +229,10 @@ ul.plain > li, ol.plain > li {
 
 ul.plain > li:first-child, ol.plain > li:first-child { border-top: 0; padding-top: 0; }
 
+.academic-record .meta { margin-bottom: 10px; }
+.academic-record ul.plain { display: grid; gap: 4px; }
+.academic-record ul.plain > li { border-top: 0; padding: 0; line-height: 1.42; }
+
 .item-title { font-weight: 600; }
 .item-note { color: var(--muted); font-size: 14px; }
 
@@ -212,7 +267,7 @@ td.code { white-space: nowrap; color: var(--muted); }
 /* Footer */
 
 footer {
-  border-top: 1px solid var(--border);
+  border-top: 0;
   margin-top: 8px;
   padding: 24px 0 64px;
   color: var(--muted);
