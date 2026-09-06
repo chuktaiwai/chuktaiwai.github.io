@@ -1,227 +1,76 @@
-:root {
-  --text: #2C2C2B;
-  --muted: #7D7A75;
-  --canvas: #FFFFFF;
-  --soft: #F9F8F7;
-  --border: #E6E5E3;
-  --accent: #2783DE;
-  --maxw: 760px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CU Philosophy Review | Chuk Tai Wai</title>
+<meta name="description" content="CU Philosophy Review is a student-led project to build a shared history of the CUHK Philosophy Department.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://chuktaiwai.com/review.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CU Philosophy Review | Chuk Tai Wai">
+<meta property="og:description" content="A student-led archive of the personal and intellectual paths within the CUHK Philosophy Department.">
+<meta property="og:url" content="https://chuktaiwai.com/review.html">
+<meta name="twitter:card" content="summary">
+</head>
+<body>
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #FFFFFF;
-    --muted: rgba(255,255,255,0.65);
-    --canvas: #191919;
-    --soft: #202020;
-    --border: rgba(255,255,255,0.20);
-    --accent: #5E9FE8;
-  }
-}
+<header class="masthead">
+  <div class="wrap">
+    <div class="masthead-row">
+      <h1 class="name">Chuk Tai Wai (Wisdom) <span class="zh">祝大為</span></h1>
+      <div class="masthead-contact"><a href="mailto:1155260199@link.cuhk.edu.hk">1155260199@link.cuhk.edu.hk</a></div>
+    </div>
+    <p class="role">Undergraduate in Philosophy, New Asia College, The Chinese University of Hong Kong</p>
+    <nav class="menu" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="review.html" aria-current="page">CU Philosophy Review</a>
+      <a href="service.html">Community Service</a>
+      <a href="files/Chuk-Tai-Wai-CV.pdf">CV</a>
+    </nav>
+  </div>
+</header>
 
-* { box-sizing: border-box; }
+<main class="wrap">
 
-html { -webkit-text-size-adjust: 100%; }
+  <section>
+    <h2>CU Philosophy Review</h2>
+    <p class="meta">Co-founder and Chief Editor, June 2026 to present. Department of Philosophy, The Chinese University of Hong Kong.</p>
+    <p class="lead">A department&rsquo;s shared history includes how its philosophers found their questions and arrived at the work they now do. Much of that history lives only in conversation. CU Philosophy Review records these paths while the people who lived them can still tell their stories. We hope this will help current and future students understand the community they inherit and continue its record.</p>
+    <p>I co-founded the journal with Lee Kwok Shun in June 2026 after weeks of discussion. Two more editors joined us while we were preparing the first issue, and the four of us now make editorial decisions together.</p>
+  </section>
 
-body {
-  margin: 0;
-  background: var(--canvas);
-  color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
+  <section>
+    <h2>First issue</h2>
+    <p class="meta">Scheduled for October 2026.</p>
+    <p>We chose to dedicate the first issue to women in philosophy and their academic paths. Two philosophers in the department have generously agreed to share their experiences, and we are grateful for the time and trust they are giving us.</p>
+  </section>
 
-.wrap {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 0 24px;
-}
+  <section>
+    <h2>How we work</h2>
+    <p>Before preparing an interview, we read the interviewee&rsquo;s published work, so that the questions begin from what they consider central.</p>
+    <p>A second editor reviews every set of questions before it is sent. After the conversation, the interviewee reviews and approves the written interview before publication. That way, each interviewee retains control over how their words appear.</p>
+  </section>
 
-a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
-a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  <section>
+    <h2>Editorial continuity</h2>
+    <p>Founding an initiative matters less than making it something others can inherit. I am preparing a first-year editor, whom I met while leading the orientation camp, to take on the journal&rsquo;s leadership when I graduate. The editors share responsibility for decisions while maintaining a consistent standard, so that the journal can outlive its founders as an archive that future students inherit and extend. I grew up in Wong Tai Sin without encountering philosophy; by preserving and sharing these paths, I hope the journal helps the next student there encounter it earlier.</p>
+  </section>
 
-/* Header */
+  <section>
+    <h2>Contributing</h2>
+    <p>Students interested in contributing to the journal&rsquo;s editorial work, and philosophers willing to be interviewed, are welcome to write to me at <a href="mailto:1155260199@link.cuhk.edu.hk">1155260199@link.cuhk.edu.hk</a>.</p>
+  </section>
 
-.masthead { padding: 48px 0 0; }
+</main>
 
-.masthead-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 8px 24px;
-}
+<footer class="wrap">
+  <p><a href="mailto:1155260199@link.cuhk.edu.hk">1155260199@link.cuhk.edu.hk</a> &middot; <a href="files/Chuk-Tai-Wai-CV.pdf">Curriculum vitae (PDF)</a></p>
+  <!-- EDIT: change this date whenever you update the site. -->
+  <p>Last updated 6 September 2026</p>
+</footer>
 
-.name {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 34px;
-  line-height: 1.15;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  margin: 0;
-}
-
-.name .zh {
-  font-size: 0.62em;
-  color: var(--muted);
-  margin-left: 8px;
-  letter-spacing: 0.02em;
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.masthead-contact {
-  font-size: 14px;
-  color: var(--muted);
-}
-
-.role {
-  margin: 12px 0 0;
-  color: var(--muted);
-  font-size: 15px;
-}
-
-/* Navigation */
-
-nav.menu {
-  margin-top: 24px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 24px;
-  font-size: 15px;
-}
-
-nav.menu a {
-  color: var(--text);
-  padding: 10px 0;
-  min-height: 44px;
-  display: inline-flex;
-  align-items: center;
-  border-bottom: 2px solid transparent;
-}
-
-nav.menu a:hover { text-decoration: none; border-bottom-color: var(--border); }
-nav.menu a[aria-current="page"] { border-bottom-color: var(--accent); }
-
-/* Sections */
-
-main { padding: 40px 0 0; }
-
-section { padding: 0 0 40px; }
-section + section { border-top: 1px solid var(--border); padding-top: 32px; }
-
-h2 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 22px;
-  font-weight: 400;
-  margin: 0 0 16px;
-}
-
-h3 {
-  font-size: 16px;
-  font-weight: 600;
-  margin: 24px 0 4px;
-}
-
-h3:first-of-type { margin-top: 0; }
-
-p { margin: 0 0 16px; }
-p:last-child { margin-bottom: 0; }
-
-.lead { font-size: 17px; }
-
-.meta { color: var(--muted); font-size: 14px; margin: 0 0 8px; }
-
-/* Bio row */
-
-.bio {
-  display: flex;
-  gap: 32px;
-  align-items: flex-start;
-}
-
-.bio img {
-  width: 160px;
-  height: 160px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  background: var(--soft);
-  flex: 0 0 auto;
-}
-
-.bio-text { flex: 1 1 auto; min-width: 0; }
-
-@media (max-width: 560px) {
-  .bio { flex-direction: column; gap: 20px; }
-  .bio img { width: 128px; height: 128px; }
-  .name { font-size: 28px; }
-  .masthead { padding-top: 32px; }
-}
-
-/* Lists */
-
-ul.plain, ol.plain {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-ul.plain > li, ol.plain > li {
-  padding: 12px 0;
-  border-top: 1px solid var(--border);
-}
-
-ul.plain > li:first-child, ol.plain > li:first-child { border-top: 0; padding-top: 0; }
-
-.item-title { font-weight: 600; }
-.item-note { color: var(--muted); font-size: 14px; }
-
-ul.compact { margin: 0; padding-left: 20px; }
-ul.compact li { margin-bottom: 6px; }
-
-/* Callout for the work-in-progress entries */
-
-.entry { padding: 16px 0; border-top: 1px solid var(--border); }
-.entry:first-of-type { border-top: 0; padding-top: 0; }
-.entry h3 { margin-top: 0; }
-.entry p { margin-bottom: 8px; }
-
-/* Course table */
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 15px;
-}
-
-th, td {
-  text-align: left;
-  padding: 8px 12px 8px 0;
-  border-bottom: 1px solid var(--border);
-  vertical-align: top;
-}
-
-th { font-weight: 600; color: var(--muted); font-size: 14px; }
-td.code { white-space: nowrap; color: var(--muted); }
-
-/* Footer */
-
-footer {
-  border-top: 1px solid var(--border);
-  margin-top: 8px;
-  padding: 24px 0 64px;
-  color: var(--muted);
-  font-size: 14px;
-}
-
-footer p { margin: 0 0 4px; }
-
-@media print {
-  nav.menu, footer { display: none; }
-  body { font-size: 11pt; color: #000; background: #fff; }
-}
+</body>
+</html>
